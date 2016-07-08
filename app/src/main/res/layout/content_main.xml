@@ -13,8 +13,24 @@
     tools:showIn="@layout/app_bar_main"
     tools:context="qducnguy.ede_vndict.MainActivity">
 
-    <TextView
-        android:text="This is dictionary Ede - V"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#f00"
+            android:textSize="25sp"
+            android:typeface="serif"
+            android:textStyle="italic"
+            android:hint="@string/type_something"/>
+
+    </ScrollView>
+
 </RelativeLayout>
